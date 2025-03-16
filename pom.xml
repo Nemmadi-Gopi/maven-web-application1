@@ -46,13 +46,13 @@
 		</dependency>
 
 		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>3.1.0</version>
-			<scope>provided</scope>
-		</dependency>
+								   
+											 
+						   
+						  
+			   
 
-		<dependency>
+			  
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-core</artifactId>
 			<version>1.9.5</version>
@@ -123,6 +123,16 @@
 				</configuration>
 			</plugin>
 
+			<!-- Updated maven-war-plugin version -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.3.1</version>  <!-- Update to a more recent version -->
+				<configuration>
+					<webappDirectory>${project.build.directory}/webapps</webappDirectory>
+				</configuration>
+			</plugin>
+
 			<plugin>
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
@@ -146,9 +156,9 @@
 					<wtpContextName>maven-web-application</wtpContextName>
 				</configuration>
 			</plugin>
-			
-</plugins>
+   
+		</plugins>
 	</build>
-	
-	
+ 
+ 
 </project>
